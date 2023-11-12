@@ -14,6 +14,11 @@ variable "var_subnet_public_az1b_vpc1" {
   default = "10.10.2.0/24"
 }
 
+variable "var_subnet_private_az1b_vpc1" {
+  type    = string
+  default = "10.10.4.0/24"
+}
+
 variable "var_subnet_public_az1c_vpc1" {
   type    = string
   default = "10.10.3.0/24"
@@ -22,6 +27,36 @@ variable "var_subnet_public_az1c_vpc1" {
 variable "var_public_route" {
   type    = string
   default = "0.0.0.0/0"
+}
+
+variable "var_vpc2_cidr" {
+  type    = string
+  default = "10.11.0.0/16"
+}
+
+variable "var_subnet_private_az1b_vpc2" {
+  type    = string
+  default = "10.11.1.0/24"
+}
+
+variable "var_subnet_public_az1b_vpc2" {
+  type    = string
+  default = "10.11.2.0/24"
+}
+
+variable "var_az1a" {
+  type    = string
+  default = "ap-southeast-1a"
+}
+
+variable "var_az1b" {
+  type    = string
+  default = "ap-southeast-1b"
+}
+
+variable "var_az1c" {
+  type    = string
+  default = "ap-southeast-1c"
 }
 
 ### EC2 #############################################
