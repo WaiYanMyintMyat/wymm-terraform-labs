@@ -49,7 +49,7 @@ module "eks" {
   aws_auth_accounts = var.var_eks_auth_accounts
 
   tags = {
-    Environment = "dev"
     eks-cluster = "true"
+    Environment = "dev"
   }
 }
